@@ -119,7 +119,57 @@
           repo', 'dirty working tree' y 'merge conflict'.
         </h3>
         <div class="answer">
-          Coloca tus respuestas aquí.
+	  <b>Working Directory: </b>
+          <br>
+          Es el directorio en el que están los archivos sobre los cuales
+          se está trabajando, por ejemplo, al crear un nuevo repositorio,
+          el directorio en el que se creó es el <i>"Working Directory"</i>.
+          
+	  <br><br>
+
+          <b>Index: </b>
+          <br>
+          Es donde se almacenan los archivos a los que se les ha hecho
+          commit, contiene el código Hash, y el nombre del archivo apuntado,
+          además de otra información relevante.
+          <br>
+	  Nótese que no necesariamente los archivos coinciden con
+          los que están en el "Working Directory"
+
+          <br><br>
+
+          <b>Local repo: </b>
+          <br>
+          Se refiere al repositorio que está en la máquina en la que
+          estamos trabajando, no necesariamente coincide con el
+          repositorio almacenado remotamente. Contiene el <i>"Index"</i>,
+          el <i>"Working Directory"</i>, y el <i>"HEAD"</i>.
+
+          <br><br>
+
+          <b>Remote repo: </b>
+          <br>
+          Es el repositorio que se encuentra almacenado en un servidor.
+          De él se hace pull, clone, push, etc. Generalmente se accede
+          a el a través de una URL.
+
+          <br><br>
+
+          <b>Dirty Working Tree: </b>
+          <br>
+          Un <i>"Dirty Working Tree"</i> es un árbol que tiene cambios
+          a los que aún no se les ha hecho commit.
+          
+          <br><br>
+
+          <b>Merge Conflict: </b>
+          Es cuando no es posible combinar los archivos de manera automática,
+          por ejemplo porque hay cambios hechos en exactamente el mismo
+          trozo de código que parecieran ser mutuamente excluyentes.
+          Este tipo de problema hay que resolverlo a mano.
+          <br>
+
+                 
         </div>
       </article>
       <article id="q4">
@@ -149,42 +199,42 @@
             <tbody>
               <tr>
                 <th scope="row">working dir</th>
+                <td>R</td>
                 <td></td>
+                <td>R</td>
                 <td></td>
+                <td>W</td>
                 <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>W</td>
               </tr>
               <tr>
                 <th scope="row">index</th>
+                <td>R</td>
                 <td></td>
-                <td></td>
-                <td></td>
+                <td>W</td>
                 <td>R/W</td>
-                <td></td>
-                <td></td>
+                <td>R</td>
+                <td>R</td>
                 <td></td>
               </tr>
               <tr>
                 <th scope="row">local repo</th>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>R</td>
                 <td>W</td>
                 <td></td>
+                <td>W</td>
+                <td>W</td>
                 <td></td>
-                <td></td>
+                <td>R</td>
               </tr>
               <tr>
                 <th scope="row">remote repo</th>
                 <td></td>
+                <td>R</td>
                 <td></td>
                 <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>R</td>
+                <td>R/W</td>
                 <td></td>
               </tr>
             </tbody>
